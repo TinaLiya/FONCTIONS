@@ -6,19 +6,16 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 22:15:35 by jmoreau           #+#    #+#             */
-/*   Updated: 2014/11/06 02:00:42 by jmoreau          ###   ########.fr       */
+/*   Updated: 2014/11/06 02:11:50 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_strlen(char *str)
+void	ft_strlen(const char *str)
 {
 	int		i;
-	char	r;
 
-	r = 0;
 	i = 0;
 	while (str[i] != '\0')
 		i++;
-	r = i + 48;
-	return (r);
+	return (i);
 }
