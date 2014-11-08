@@ -6,16 +6,16 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 22:15:35 by jmoreau           #+#    #+#             */
-/*   Updated: 2014/11/08 04:04:06 by jmoreau          ###   ########.fr       */
+/*   Updated: 2014/11/08 04:07:02 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t		ft_strlen(const char *str)
+size_t		ft_strlen(const char *s)
 {
 	int		i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (s[i] != '\0')
 		i++;
 	return (i);
 }
