@@ -6,11 +6,11 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 22:15:35 by jmoreau           #+#    #+#             */
-/*   Updated: 2014/11/06 02:11:50 by jmoreau          ###   ########.fr       */
+/*   Updated: 2014/11/08 04:04:06 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_strlen(const char *str)
+size_t		ft_strlen(const char *str)
 {
 	int		i;
 
