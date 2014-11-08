@@ -6,7 +6,7 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 21:33:55 by jmoreau           #+#    #+#             */
-/*   Updated: 2014/11/08 00:38:43 by jmoreau          ###   ########.fr       */
+/*   Updated: 2014/11/08 01:08:04 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@ int		ft_isdigit(int c);
 
 int		ft_isalnum(int c)
 {
-	return ((ft_isalpha(c)) || (ft_isdigit(c)));
+	return (ft_isalpha(c) || ft_isdigit(c));
 }
