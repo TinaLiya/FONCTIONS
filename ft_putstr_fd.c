@@ -6,7 +6,7 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/11 04:51:31 by jmoreau           #+#    #+#             */
-/*   Updated: 2014/11/11 04:58:03 by jmoreau          ###   ########.fr       */
+/*   Updated: 2014/11/11 05:35:48 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_putstr_fd(char const *s, int fd)
 	{
 		while (s[i] != '\0')
 		{
-			ft_putchar(s[i], fd);
+			ft_putchar_fd(s[i], fd);
 			i++;
 		}
 	}
