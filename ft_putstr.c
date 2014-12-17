@@ -26,3 +26,35 @@ void	ft_putstr(char const *s)
 		}
 	}
 }
+
+void	ft_putstr(char const *s)
+{
+	int		i;
+
+	i = 0 ;
+	while (s[i])
+	{
+		ft_putchar(s[i]);
+		i++;
+	}
+}
+
+void	ft_putstr(char const *s)
+{
+	while (s)
+	{
+		ft_putchar(*s);
+		s++;
+	}
+}
+
+void	ft_putstr(char const *s)
+{
+	while (s)
+		ft_putchar(*s++);
+}
+
+void	ft_putstr(char const *s)
+{
+	write(1, &*s++, ft_strlen(s));
+}

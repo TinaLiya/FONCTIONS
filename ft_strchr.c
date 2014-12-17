@@ -1,23 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/08 08:33:34 by jmoreau           #+#    #+#             */
-/*   Updated: 2014/12/17 01:16:48 by jmoreau          ###   ########.fr       */
+/*   Created: 2014/11/18 10:53:57 by jmoreau           #+#    #+#             */
+/*   Updated: 2014/11/18 12:24:36 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-void	*ft_memset(void *b, int c, size_t len)
+char	*ft_strchr(const char *s, int c)
 {
-	while (len)
+	char	*tmp;
+
+	tmp = (char*)s;
+	while (tmp && *tmp)
 	{
-		len--;
-		((char *)b)[len] = (unsigned char)c;
+		if (*tmp == c)
+			return (tmp);
+		tmp++;
 	}
-	return ((char *)b);
+	return (NULL)
 }
