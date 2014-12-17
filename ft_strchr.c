@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+<<<<<<< HEAD
 #include <string.h>
 
 char	*ft_strchr(const char *s, int c)
@@ -24,4 +25,9 @@ char	*ft_strchr(const char *s, int c)
 		tmp++;
 	}
 	return (NULL)
+=======
+char	*ft_strchr(const char *s, int c)
+{
+
+>>>>>>> 7d48ebf81100ce3e5c09dded6b7027e9511b2fc3
 }
