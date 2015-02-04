@@ -6,7 +6,7 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/22 20:36:54 by jmoreau           #+#    #+#             */
-/*   Updated: 2015/02/04 18:54:45 by jmoreau          ###   ########.fr       */
+/*   Updated: 2015/02/04 18:58:32 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ int		ft_strcmp(const char *s1, const char *s2)
 	{
 		if (s1[i] == s2[i])
 			i++;
+		else
+			return (s1[i] - s2[i]);
 	}
 	return (s1[i] - s2[i]);
 }
