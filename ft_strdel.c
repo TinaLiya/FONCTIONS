@@ -6,14 +6,18 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/04 19:17:58 by jmoreau           #+#    #+#             */
-/*   Updated: 2015/02/04 19:20:48 by jmoreau          ###   ########.fr       */
+/*   Updated: 2015/02/06 00:35:12 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdlib.h>
 
 void	ft_strdel(char **as)
 {
-	free(*as);
-	*as = NULL;
+	if (as && *as)
+	{
+		free(*as);
+		*as = NULL;
+	}
 }

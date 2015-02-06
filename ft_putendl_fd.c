@@ -6,7 +6,7 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/11 04:58:49 by jmoreau           #+#    #+#             */
-/*   Updated: 2014/11/11 05:06:44 by jmoreau          ###   ########.fr       */
+/*   Updated: 2015/02/06 00:55:49 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@
 void	ft_putendl_fd(char const *s, int fd)
 {
 	ft_putstr_fd(s, fd);
-	ft_putchar_fd('\n');
+	ft_putchar_fd('\n', fd);
 }

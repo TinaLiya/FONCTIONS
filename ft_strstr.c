@@ -6,12 +6,11 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/27 07:06:47 by jmoreau           #+#    #+#             */
-/*   Updated: 2014/12/27 08:25:55 by jmoreau          ###   ########.fr       */
+/*   Updated: 2015/02/06 00:45:09 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 char	*ft_strstr(const char *s1, const char *s2)
 {

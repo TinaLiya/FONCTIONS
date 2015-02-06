@@ -6,11 +6,11 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/26 03:15:20 by jmoreau           #+#    #+#             */
-/*   Updated: 2014/12/26 03:29:30 by jmoreau          ###   ########.fr       */
+/*   Updated: 2015/02/06 00:22:47 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {

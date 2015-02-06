@@ -6,12 +6,11 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/05 22:36:43 by jmoreau           #+#    #+#             */
-/*   Updated: 2015/02/05 23:33:54 by jmoreau          ###   ########.fr       */
+/*   Updated: 2015/02/06 00:38:09 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strnew(size_t size);
-void	ft_putstr(char const *s);
+#include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

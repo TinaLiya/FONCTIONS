@@ -6,11 +6,11 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/17 03:38:20 by jmoreau           #+#    #+#             */
-/*   Updated: 2014/12/20 22:32:28 by jmoreau          ###   ########.fr       */
+/*   Updated: 2015/02/06 00:24:45 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {

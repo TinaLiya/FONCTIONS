@@ -6,11 +6,11 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/17 03:17:01 by jmoreau           #+#    #+#             */
-/*   Updated: 2014/12/17 03:34:40 by jmoreau          ###   ########.fr       */
+/*   Updated: 2015/02/06 00:17:29 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

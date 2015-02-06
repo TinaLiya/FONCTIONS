@@ -6,9 +6,11 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 02:04:55 by jmoreau           #+#    #+#             */
-/*   Updated: 2014/11/06 05:35:25 by jmoreau          ###   ########.fr       */
+/*   Updated: 2015/02/06 00:32:11 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strcpy(char *dst, const char *src)
 {

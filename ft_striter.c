@@ -6,9 +6,11 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/22 20:29:06 by jmoreau           #+#    #+#             */
-/*   Updated: 2015/02/04 19:00:30 by jmoreau          ###   ########.fr       */
+/*   Updated: 2015/02/06 01:02:46 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_striter(char *s, void (*f)(char *))
 {
@@ -16,5 +18,5 @@ void	ft_striter(char *s, void (*f)(char *))
 
 	i = 0;
 	while (s[i])
-		f(s[i++]);
+		f(&s[i++]);
 }
