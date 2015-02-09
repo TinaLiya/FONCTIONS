@@ -6,7 +6,7 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/09 05:12:14 by jmoreau           #+#    #+#             */
-/*   Updated: 2015/02/09 05:55:29 by jmoreau          ###   ########.fr       */
+/*   Updated: 2015/02/09 06:18:08 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,8 @@ static int		ft_strdiv(char *s, char c)
 
 char			**ft_strsplit(char const*s, char c)
 {
+	int		k;
+	char	**tab;
 
+	tab = (char **)malloc((ft_strdiv(s, c) + 1 ) * sizeof(char *));
 }
