@@ -6,7 +6,7 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/07 20:32:33 by jmoreau           #+#    #+#             */
-/*   Updated: 2015/02/07 21:08:59 by jmoreau          ###   ########.fr       */
+/*   Updated: 2015/02/10 03:26:45 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ char	*ft_strtrim(char const *s)
 		start++;
 	if (start == len)
 		return (NULL);
-	while (ft_isspace(s[len--]));
+	while (ft_isspace(s[len]))
+		len--;
 	len = len - start;
 	str = ft_strsub(s, start, len);
 	return (str);
