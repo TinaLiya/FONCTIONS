@@ -6,13 +6,13 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/08 00:45:47 by jmoreau           #+#    #+#             */
-/*   Updated: 2015/02/06 00:20:06 by jmoreau          ###   ########.fr       */
+/*   Updated: 2015/02/12 05:16:42 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		isprint(int c)
+int		ft_isprint(int c)
 {
 	char	a;
 	char	b;

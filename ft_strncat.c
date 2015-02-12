@@ -6,7 +6,7 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/24 03:06:50 by jmoreau           #+#    #+#             */
-/*   Updated: 2015/02/06 00:23:57 by jmoreau          ###   ########.fr       */
+/*   Updated: 2015/02/12 04:44:42 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strncat(char *s1, const char *s2, size_t n)
 {
-	int		i;
+	size_t	i;
 	int		s;
 
 	i = 0;

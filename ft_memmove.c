@@ -1,30 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsub.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/02/07 20:12:35 by jmoreau           #+#    #+#             */
-/*   Updated: 2015/02/12 04:48:51 by jmoreau          ###   ########.fr       */
+/*   Created: 2015/02/12 04:31:46 by jmoreau           #+#    #+#             */
+/*   Updated: 2015/02/12 05:32:32 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strsub(char const *s, unsigned int start, size_t len)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char	*str;
 	size_t	i;
+	void	*tmp;
 
 	i = 0;
-	str = ft_strnew(len + 1);
-	if (!s)
-		return (NULL);
 	while (i != len)
 	{
-		str[i++] = s[start++];
+		((char *)dst)[i] = ((char *)src)[i];
+		i++;
 	}
-	str[i] = '\0';
-	return (str);
+	return (dst);
 }

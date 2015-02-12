@@ -6,7 +6,7 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/22 20:03:08 by jmoreau           #+#    #+#             */
-/*   Updated: 2015/02/06 00:21:20 by jmoreau          ###   ########.fr       */
+/*   Updated: 2015/02/12 04:30:36 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,7 @@
 void	*ft_memalloc(size_t size)
 {
 	void	*p;
-	int		i;
 
-	i = 0;
 	p = malloc(size);
 	if (p == NULL)
 		return (NULL);
@@ -27,4 +25,5 @@ void	*ft_memalloc(size_t size)
 		size--;
 		((unsigned char *)p)[size] = 0;
 	}
+	return (p);
 }

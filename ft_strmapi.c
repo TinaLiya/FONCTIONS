@@ -6,7 +6,7 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/04 22:19:17 by jmoreau           #+#    #+#             */
-/*   Updated: 2015/02/10 03:24:10 by jmoreau          ###   ########.fr       */
+/*   Updated: 2015/02/12 04:44:00 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,9 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	i = 0;
 	str = ft_strnew(ft_strlen(s));
 	while (*s)
-		str[i] = f(i++, *s++);
+	{
+		str[i] = f(i, *s++);
+		i++;
+	}
 	return (str);
 }

@@ -6,7 +6,7 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/11 01:51:03 by jmoreau           #+#    #+#             */
-/*   Updated: 2015/02/06 00:40:52 by jmoreau          ###   ########.fr       */
+/*   Updated: 2015/02/12 04:46:01 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int		ft_strnequ(char const *s1, char const *s2, size_t n)
 {
-	int		i;
+	size_t	i;
 
 	i = 0;
 	if (s1[i] == s2[i])

@@ -6,14 +6,14 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/09 05:12:14 by jmoreau           #+#    #+#             */
-/*   Updated: 2015/02/10 03:25:52 by jmoreau          ###   ########.fr       */
+/*   Updated: 2015/02/12 04:48:08 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-static int		ft_strdiv(char *s, char c)
+static int		ft_strdiv(char const *s, char c)
 {
 	int	i;
 	int	k;
@@ -21,7 +21,7 @@ static int		ft_strdiv(char *s, char c)
 	i = 0;
 	k = 0;
 	if (!s)
-		return (NULL);
+		return (0);
 	while (s[i] == c && s[i])
 		i++;
 	while (s[i])

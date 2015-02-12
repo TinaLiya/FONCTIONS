@@ -6,7 +6,7 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/04 22:02:09 by jmoreau           #+#    #+#             */
-/*   Updated: 2015/02/10 03:23:47 by jmoreau          ###   ########.fr       */
+/*   Updated: 2015/02/12 04:43:05 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,9 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	i = 0;
 	str = ft_strnew(ft_strlen(s));
 	while (s[i])
-		str[i] = f(s[i++]);
+	{
+		str[i] = f(s[i]);
+		i++;
+	}
 	return (str);
 }
