@@ -6,7 +6,7 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/10 03:27:37 by jmoreau           #+#    #+#             */
-/*   Updated: 2015/02/12 01:05:50 by jmoreau          ###   ########.fr       */
+/*   Updated: 2015/02/12 04:18:32 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ char	*ft_itoa(int n)
 	i = 0;
 	k = n;
 	if (n == 0)
-		return ("0");
-	if (n == -2147683647)
-		return ("-")
+		return (ft_strdup("0"));
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
 	while (k)
 	{
 		k = k / 10;
@@ -45,10 +45,4 @@ char	*ft_itoa(int n)
 		i--;
 	}
 	return (str);
-}
-
-int		main(void)
-{
-	ft_putstr(ft_itoa(-2147483647));
-	return (0);
 }
