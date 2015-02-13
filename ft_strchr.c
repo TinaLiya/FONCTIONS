@@ -6,7 +6,7 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/26 04:48:24 by jmoreau           #+#    #+#             */
-/*   Updated: 2015/02/06 00:57:13 by jmoreau          ###   ########.fr       */
+/*   Updated: 2015/02/13 07:53:22 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,7 @@ char	*ft_strchr(const char *s, int c)
 			return (&((char *)s)[i]);
 		i++;
 	}
+	if (c == '\0')
+		return (&((char *)s)[i]);
 	return (NULL);
 }
