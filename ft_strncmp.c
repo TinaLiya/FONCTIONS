@@ -6,7 +6,7 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/09 01:28:31 by jmoreau           #+#    #+#             */
-/*   Updated: 2015/02/13 08:13:05 by jmoreau          ###   ########.fr       */
+/*   Updated: 2015/02/14 01:56:35 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,7 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n)
 			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 		i++;
 	}
+	if (i == n)
+		return (0);
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }

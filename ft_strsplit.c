@@ -6,13 +6,14 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/09 05:12:14 by jmoreau           #+#    #+#             */
-/*   Updated: 2015/02/12 04:48:08 by jmoreau          ###   ########.fr       */
+/*   Updated: 2015/02/14 03:13:28 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
+#include <stdio.h>
 static int		ft_strdiv(char const *s, char c)
 {
 	int	i;
@@ -49,12 +50,17 @@ char			**ft_strsplit(char const *s, char c)
 	{
 		while (s[i] == c && s[i])
 			i++;
+		if (!s[i])
+			break;
 		k = 0;
 		while (s[i + k] != c && s[i + k])
 			k++;
 		tab[j] = ft_strnew(k + 1);
 		ft_strncpy(tab[j], &s[i], k);
-		j++;
+		tab[j][k] = 0;
+		i += ft_strlen(tab[j]);
+		if (k)
+			j++;
 	}
 	tab[j] = NULL;
 	return (tab);
