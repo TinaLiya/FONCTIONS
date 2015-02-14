@@ -6,13 +6,12 @@
 /*   By: jmoreau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/07 20:32:33 by jmoreau           #+#    #+#             */
-/*   Updated: 2015/02/14 08:29:15 by jmoreau          ###   ########.fr       */
+/*   Updated: 2015/02/14 08:40:19 by jmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-#include <stdio.h>
 char	*ft_strtrim(char const *s)
 {
 	char			*str;
